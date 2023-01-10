@@ -51,13 +51,22 @@
     padding: 1rem 0;
     font-size: 1.5rem;
     text-align: center;
-    border-top: 1px solid #d3d5e3;
+    border-top: 1px solid #D4D3D3;
     background-color: rgba(241, 241, 241, 0.833);
-    border-right: solid 1px grey;
+    border-right: solid 1px #D4D3D3;
+
 }
 
 .stats>li:last-child {
     border-right: none;
+}
+
+.stats>li:first-child {
+    border-radius: 0 0 0 0.5rem;
+}
+
+.stats>li:last-child {
+    border-radius: 0 0 0.5rem 0;
 }
 
 .viewsList {
