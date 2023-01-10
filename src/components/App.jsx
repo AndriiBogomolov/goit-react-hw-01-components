@@ -1,6 +1,13 @@
 import { Profile } from 'components/Profile/Profile';
 import user from './Profile/user.json';
 
+import { Statistics } from 'components/Statistics/Statistics';
+import data from './Statistics/data.json';
+
+import { FriendList } from 'components/FriendList/FriendList';
+import friends from './FriendList/friends.json';
+
+
 export const App = ( ) => {
   return (
     <div
@@ -23,27 +30,13 @@ export const App = ( ) => {
 
 
 
+<Statistics title="Upload stats" stats={data} />
+<Statistics stats={data} />
+
+
+<FriendList friends={friends} />;
 
     </div>
 
   );
 };
-
-
-
-// export const App = ({ children }) => {
-//   return (
-//     <div
-//       style={{
-//         display: 'flex',
-//         flexDirection: 'column',
-//         justifyContent: 'center',
-//         alignItems: 'center',
-//         fontSize: 40,
-//         color: '#010101',
-//       }}
-//     >
-//       { children }
-//     </div>
-//   );
-// };
