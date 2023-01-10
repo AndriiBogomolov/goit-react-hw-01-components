@@ -20,17 +20,17 @@
     display: flex;
     max-width: 30%;
     border-radius: 50%;
-    border: 5px dotted black;
+    border: 5px inset black;
 }
 
-.profileName {
+.name {
     margin-bottom: 0.5rem;
     font-weight: bold;
     font-size: 2.5rem;
 }
 
-.profileTag,
-.profileLocation {
+.tag,
+.location {
     margin: 0.5rem;
     font-size: 2rem;
     color: #8a8b8e;
@@ -45,7 +45,7 @@
     list-style: none;
 }
 
-.stats>li {
+.stats > li {
     display: flex;
     flex-direction: column;
     padding: 1rem 0;
@@ -53,6 +53,11 @@
     text-align: center;
     border-top: 1px solid #d3d5e3;
     background-color: rgba(241, 241, 241, 0.833);
+    border-right: solid 1px grey;
+}
+
+.stats>li:last-child {
+    border-right: none;
 }
 
 .viewsList {
