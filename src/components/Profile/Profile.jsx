@@ -1,7 +1,5 @@
 import PropTypes from 'prop-types';
 import css from './Profile.module.css';
-// import user from './user.json';
-
 
 export const Profile = ({ avatar, username, tag, location, stats }) => (
     
@@ -41,9 +39,9 @@ Profile.propTypes = {
     location: PropTypes.string.isRequired,
     stats: PropTypes.arrayOf(
         PropTypes.shape({
-            followers: PropTypes.number.isRequired,
-            views: PropTypes.number.isRequired,
-            likes: PropTypes.number.isRequired,
+            followers: PropTypes.string.isRequired,
+            views: PropTypes.string.isRequired,
+            likes: PropTypes.string.isRequired,
         })
     ),
 };
